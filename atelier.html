@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_atelier.css">
+    <title>atelier</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="atelier.html">Atelier</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+    <div class="line"></div>
+</div>
+    </header>
+    <main>
+        <section class="sec1">
+            <img src="img/atl1.png" alt="">
+            <p>Bienvenue au Musée de la Poterie "MUCEM" de Safi, un hommage à l'art ancestral de la poterie. Explorez nos expositions uniques, rencontrez des artisans locaux et trouvez des trésors artisanaux.</p>
+        </section>
+        <section class="sec2">
+            <div class="image">
+                <img src="img/atl2.png" alt="">
+            </div>
+            <div class="info">
+                <h3>les informations nécessaires pour y participer</h3>
+                <div class="text">
+                    <p>1. Réservation préalable : Les visiteurs doivent réserver leur place à l'avance pour garantir leur participation à l'atelier.</p>
+                    <p>2. Âge minimum : Vous pourriez spécifier un âge minimum pour les participants, en fonction de la complexité des activités de poterie.</p>
+                    <p>3. Capacité de l'atelier : Limitez le nombre de participants en fonction de la capacité de votre atelier pour assurer une expérience de qualité.</p>
+                    <p>4. Politique de respect de l'environnement : Encouragez le respect de l'environnement en précisant comment les matériaux doivent être gérés, recyclés ou éliminés.</p>
+                </div>
+                <button><a href="#sec4">PARTICIPER</a></button>
+            </div>     
+        </section>
+        <section class="sec3">
+            <h1>Opening Hours</h1>
+            <div class="content">
+                <div class="div1">
+                    <p class="txt">Mon-Thu 08:00-18:00</p>
+                    <p class="txt">Sun<br> 9:00-18:00</p>
+                </div>
+                <div class="div2">
+                    <p class="txt">Fri<br> 08:00-19:00</p>
+                    <p class="txt">Sat<br> 9:00-18:00</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec4" id="sec4">
+            <form onsubmit="return validerFormulaire()">
+                <input type="text" id="full_name" placeholder="Full name">
+                <input type="text" id="cin" placeholder="CIN">
+                <input type="email" id="email" placeholder="Email">
+                <input type="number" id="num" placeholder="Phone number">
+                <input class="btn"  type="submit" value="ENVOYER">
+            </form>
+            <img src="img/IMG.png" alt>
+        </section>
+    </main>
+    <footer>
+        <div class="division3">
+            <div class="div1">
+                <a href="">support@mucem.com+44</a>
+                <a href="">1753309625Contact OptionsPrivacy</a>
+                <a href="">PolicyCookies</a>
+            </div>
+            <div class="div2">
+                <h3 href="">À PROPOS DE NOUS</h3>
+                <div class="txt">
+                    <p>Notre Processus Créatif</p>    
+                    <p>Notre Engagement envers l'Artisanat</p>
+                    <p>Pourquoi Choisir Notre Musée ?</p>
+                    <p>Témoignages de Passionnés</p>
+                    <p>Partenariats Artistiques</p>
+                    <p>Modalités et Informations</p>
+                </div>
+            </div>
+        </div>
+        <div class="resaux">
+            <a href=""><img src="img/fb.png" alt=""></a>
+            <a href=""><img src="img/twiter.png" alt=""></a>
+            <a href=""><img src="img/ins.png" alt=""></a>
+        </div>
+    </footer>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+
+        <!-- regex -->
+
+            <script>
+                function validerFormulaire() {
+                    var full_name = document.getElementById("full_name").value;
+                    var cin = document.getElementById("cin").value;
+                    var email = document.getElementById("email").value;
+                    var num = document.getElementById("num").value;
+                    
+                    var full_nameRegex = /^[a-zA-Z ]+$/;
+                    var cinRegex = /^[a-zA-Z0-9]+$/;
+                    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{3}$/;
+                    var numRegex = /^[0-9]{10}$/;
+                    var i=1;
+        
+                    if (!full_name.match(full_nameRegex)) {
+                        alert("full name n'est pas valide.");
+                        i=0;
+                    }
+
+                    if (!cin.match(cinRegex)) {
+                        alert("CIN n'est pas valide.");
+                        i=0;
+                    }
+
+                    if (!email.match(emailRegex)) {
+                        alert("L'adresse e-mail n'est pas valide.");
+                        i=0;
+                    }
+
+                    if (!num.match(numRegex)) {
+                        alert("Numero de telephone  n'est pas valide.");
+                        i=0;
+                    }
+        
+                    if(i==1){
+                        alert("formulair remplie avec succé");
+                    }
+                }
+            </script>
+
+        <!-- fin -->
+
+</body>
+</html>

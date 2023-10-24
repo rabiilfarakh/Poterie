@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    width: 100%;
+}
+/*****************header*****************/
+header {
+    background-color: rgba(128, 128, 128, 0.599);
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 112px;
+    padding-top: 5px;
+    margin-left: 24px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 5rem;
+    margin-right: 6rem;
+
+}
+
+.navbar ul li a {
+    color: black;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #815B22;
+}
+
+/*****************main*****************/
+
+/*****************section_1*****************/
+.sec1{
+    width: 100%;
+    display: flex;
+    gap: 8VW;
+}
+.sec1 img{
+    width: 50%;
+    height: 40vw;
+    margin-top: 10vw;
+    margin-left: 4vw;
+}
+
+.sec1 p {
+    width: 64%;
+    margin-top: 16%;
+    color: rgba(0, 0, 0, 0.574);
+    font-size: 3vw;
+    margin-right: 5vw;
+}
+
+/*****************section_2*****************/
+.sec2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8vw;
+}
+
+.sec2 .image img{
+    width: 36vw;
+    margin-top: -5vw;
+}
+.sec2 .info{
+    background-color: #D9D9D9;
+    width: 44%;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    height: 51vw;
+    align-items: center;
+}
+.sec2 .info h3{
+    width: 24vw;
+    margin-top: 4vw;
+    font-size: 2vw;
+    text-align: center;
+}
+.sec2 .info .text{
+    width: 30vw;
+    margin-top: 2vw;
+    font-size: 1.5vw;
+}
+.sec2 .info .text p{
+    padding-top: 2vw;
+}
+.sec2 .info button{
+    margin-top: 2.8vw;
+    width: 16VW;
+    height: 4vw;
+    border-radius: 112PX;
+    background-color: #786b5786;
+    font-size: 1.4vw;
+}
+.sec2 .info button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #815B22;
+}
+.sec2 .info a{
+    color: white;
+}
+.sec2 .info a:hover{
+    color: #815B22;
+}
+
+/*****************section_3*****************/
+.sec3{
+    background-color: #8e785e84;
+    width: 100%;
+    height: 24vw;
+    margin-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec3 h1{
+    color: white;
+    background-color: #D4CFCF;
+    width: 30vw;
+    height: 8vw;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+.sec3 .content .txt{
+    color: white;
+    width: 12vw;
+    font-size: 2.2vw;
+}
+
+.sec3 .content{
+    float: right;
+    display: flex;
+    gap: 8vw;
+}
+
+
+/*****************section_4*****************/
+.sec4{
+    width: 100%;
+    height: 56vw;
+    background-color: #D9D9D9;
+    padding-top: 8vw;
+    display: flex;
+    justify-content: space-around;
+}
+.sec4 form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+}
+.sec4 form input{
+    margin-top: 1.4vw;
+    height: 3.4vw;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px;
+}
+.sec4 form .btn{
+    width: 16vw;
+    margin-left: 6.2vw;
+}
+.sec4 form .btn:hover{
+    background-color: #786b5786;
+    color: white;
+}
+.sec4 img{
+    width: 30vw;
+    height: 40vw;
+}
+
+/*****************footer******************/
+footer {
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    height: 24vw;
+
+}
+
+footer .division3 {
+    display: flex;
+    justify-content: center;
+    gap: 32vw;
+    padding-top: 4vw;
+}
+
+.division3 .div1 {
+    width: 20%;
+}
+
+.division3 .div1 a {
+    color: white;
+    font-size: 1.6vw;
+}
+
+.division3 .div1 a:hover {
+    color: #815B22;
+
+}
+
+.division3 .div2 {
+    width: 20%;
+    margin-right: 5vw;
+    color: white;
+}
+
+.div2 h3 {
+    font-size: 2vw;
+    width: auto;
+}
+
+.div2 .txt p {
+    font-size: 1.6vw;
+    width: 120%;
+}
+footer{
+    height: auto;
+}
+footer .resaux {
+    margin-left: 12vw;
+}
+
+footer .resaux img {
+    width: 3%;
+    height: 0.5%;
+    padding: 0.6vw;
+}
+
+.txt {
+    margin-top: 2vw;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 8PX;
+}
+.hamburger div {
+    padding-right: 20px;
+    width: 12px;
+    height: 2px;
+    margin: 6px 16PX;
+    background: #000000;
+}
+
+
+
+/****tablette****/
+@media screen and (max-width: 920px) {
+.sec4 form{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+}
+.sec4 form input{
+    margin-top: 12px;
+    height: 32px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px;
+}
+.sec4 form .btn{
+    width: 160px;
+    margin-left: 48PX;
+}
+}
+
+/****mobile****/
+@media screen and (max-width: 767px) {
+    header img{
+        width: 100PX;
+        padding-top: 8px;
+    }
+    .hamburger{
+        display: block;
+
+        position: absolute;
+        margin-left: 76vw;
+    }
+    header .navbar {
+        position: absolute;
+        height: 0;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #0000009e;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    header .navbar.active{
+        height: 250px;
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        transform: 0,5s;
+        margin: 80px ;
+        opacity: 1;
+    }
+    header .navbar ul li{
+        margin-top: -40px;
+        
+    }
+    header .navbar ul li a{
+        color: white;
+    }
+    .sec2 .info .text {
+        width: 260PX;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .sec2 .info .text p{
+        width: 100%;
+        padding-top: 18px;
+    }
+    .sec2 .info h3 {
+        width: 200px;
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    .sec2 .info{
+        width: 320px;
+        height: 400px;
+    }
+    .sec2 .info button{
+        width: 140px;
+        height: 32px;
+        margin-top: 24px;
+    }
+    .sec2 .info button a{
+        font-size: 12px;
+    }
+    .sec2{
+       display: flex;
+       flex-wrap: wrap-reverse;
+    }
+    .resaux{
+        text-align: center;
+        margin-right: 60px;
+    }
+    footer .resaux img{
+        width: 6%;
+    }
+    footer .division3 .div1 a{
+        font-size: 10px;
+    }
+    .div2 .txt p {
+        font-size: 10PX;
+        width: 200PX;
+    }
+    .div2 h3 {
+        font-size: 12PX;
+        width: 150PX;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+.sec1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sec1 img{
+    width: 80%;
+    height: 40%;
+    margin-left: 0;
+    margin-top: 60px;
+}
+.sec1 p{
+    margin-top: 0px;
+    font-size: 16px;
+    width: 90%;
+    margin-left: 16px;
+}
+.sec4 img{
+    width: 0px;
+}
+.sec4{
+    display: flex;
+    justify-content: center;
+}
+.sec4 form{
+    margin-top: 0px;
+}
+.sec4{
+    height: 260px;
+}
+.resaux{
+    text-align: center;
+    margin-right: 60px;
+}
+footer .resaux img{
+    width: 6%;
+}
+.div2{
+    padding-right: 40px;
+}
+.div2 .txt p {
+    font-size: 8PX;
+    width: 200PX;
+
+}
+.div2 h3 {
+    font-size: 10PX;
+    width: 150PX;
+}
+
+.sec2 .info .text {
+    width: 260PX;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.sec2 .info .text p{
+    width: 100%;
+    padding-top: 18px;
+}
+.sec2 .info h3 {
+
+    width: 90%;
+    font-size: 16px;
+    margin-top: 32px;
+}
+.sec2 .info{
+    width: 92%;
+    padding-left: 8px;
+}
+
+
+}

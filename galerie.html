@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_galerie.css">
+    <title>atelier</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="atelier.html">Atelier</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    <main>
+        <section class="sec1">
+            <video controls>
+                <source src="img/videohd.mp4" type="video/mp4">
+            </video>
+            <p>Pour une immersion complète dans l'art et la poterie de Safi, explorez notre sélection d'images et de vidéos. Vous y trouverez une riche source d'inspiration, des détails sur nos artisans talentueux, et une vue d'ensemble captivante de la création artistique à Safi</p>
+        </section>
+        <section class="sec2">
+            <p>Modèles de poterie fabriqués à Safi, représentant la diversité des créations artistiques dans cette région marocaine.</p>
+        </section>
+
+        <section class="sec3">
+          <div class = container>
+            <div class = card>
+              <div class = image>
+                <img href = "#" src =./img/jj.png>
+              </div>
+              <div class = content>
+                <h3>Vase</h3>
+                <p>Un vase blanc est un objet de décoration qui apporte élégance et simplicité à n'importe quel espace.</p>
+              </div>
+            </div>    
+          </div>
+          <div class = container>
+            <div class = card>
+              <div class = image>
+                <img href = "#" src =./img/tajin1.png>
+              </div>
+              <div class = content>
+                <h3>Tajine</h3>
+                <p>Le tajine jaune est un plat marocain, coloré par le curcuma et le safran, connu pour sa délicieuse saveur.</p>
+              </div>
+            </div>    
+          </div>
+          <div class = container>
+            <div class = card>
+              <div class = image>
+                <img href = "#" src = ./img/tajine2.png>
+              </div>
+              <div class = content>
+                <h3>Tajine</h3>
+                <p>Le tajine blanc et bleu est une variante de ce plat traditionnel marocain. Sa couleur provient souvent de l'argile non émaillée du tajine lui-même.</p>
+              </div>
+            </div>    
+          </div>
+        </section>
+        <section class="sec4">
+          <div class="im">
+               <img id="img" alt="">
+          </div>
+          <div class="direction">
+             <div id="flechG">
+               <img src="img/directionG.png" alt>
+             </div>
+             <div id="flechD">
+               <img src="img/directionD.png" alt>
+             </div>
+          </div>
+       </section>
+    </main>
+    <footer>
+        <div class="division3">
+            <div class="div1">
+                <a href="">support@mucem.com+44</a>
+                <a href="">1753309625Contact OptionsPrivacy</a>
+                <a href="">PolicyCookies</a>
+            </div>
+            <div class="div2">
+                <h3 href="">À PROPOS DE NOUS</h3>
+                <div class="txt">
+                    <p>Notre Processus Créatif</p>    
+                    <p>Notre Engagement envers l'Artisanat</p>
+                    <p>Pourquoi Choisir Notre Musée ?</p>
+                    <p>Témoignages de Passionnés</p>
+                    <p>Partenariats Artistiques</p>
+                    <p>Modalités et Informations</p>
+                </div>
+            </div>
+        </div>
+        <div class="resaux">
+            <a href=""><img src="img/fb.png" alt=""></a>
+            <a href=""><img src="img/twiter.png" alt=""></a>
+            <a href=""><img src="img/ins.png" alt=""></a>
+        </div>
+    </footer>
+
+    </script>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+
+
+
+
+<script>
+    const flechG = document.getElementById('flechG')
+    const flechD = document.getElementById('flechD')
+    const fleG = document.getElementById('fleG')
+    const fleD = document.getElementById('fleD')
+    const img = document.getElementById('img')
+    const img2 = document.getElementById('img2')
+    var imgTable = ["./img/1.png","./img/2.png","./img/3.png","./img/5.png"] 
+    var i=0
+    var j=0
+
+    img.setAttribute('src',imgTable[i])
+    flechD.addEventListener('click',()=>{
+      if(i==3){
+        i=0
+        img.setAttribute('src',imgTable[i])
+      }else{
+        i++
+        img.setAttribute('src',imgTable[i])
+      }
+    })
+    flechG.addEventListener('click',()=>{
+      if(i==0){
+        i=3
+        img.setAttribute('src',imgTable[i])
+      }else{
+        i--
+        img.setAttribute('src',imgTable[i])
+      }
+    })
+
+
+
+
+
+    function changeImg(){
+      if(i==3){
+        i=0
+        img.setAttribute('src',imgTable[i])
+      }else{
+        i++
+        img.setAttribute('src',imgTable[i])
+      }
+      setTimeout(changeImg, 5000);
+    }
+    changeImg()
+
+
+  </script>
+
+
+</body>
+</html>
