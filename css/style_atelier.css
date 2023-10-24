@@ -5,14 +5,16 @@
     list-style-type: none;
 }
 
-html {
+html, body {
     width: 100%;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
 }
 /*****************header*****************/
 header {
     background-color: rgba(128, 128, 128, 0.599);
-    width: 100%;
+    width: 100vw;
     height: 56px;
     position: fixed;
     display: flex;
@@ -202,7 +204,7 @@ footer {
 footer .division3 {
     display: flex;
     justify-content: center;
-    gap: 32vw;
+    gap: 34vw;
     padding-top: 4vw;
 }
 
@@ -212,7 +214,7 @@ footer .division3 {
 
 .division3 .div1 a {
     color: white;
-    font-size: 1.6vw;
+    font-size: 3vw;
 }
 
 .division3 .div1 a:hover {
@@ -238,14 +240,22 @@ footer .division3 {
 footer{
     height: auto;
 }
-footer .resaux {
-    margin-left: 12vw;
+.resaux {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    gap: 2VW;
+}
+.resaux a{
+    width: 6vw;
+    height: 12vw;
 }
 
+
 footer .resaux img {
-    width: 3%;
-    height: 0.5%;
-    padding: 0.6vw;
+    width: 90%;
+    height: 40%;
 }
 
 .txt {
@@ -265,6 +275,7 @@ footer .resaux img {
     margin: 6px 16PX;
     background: #000000;
 }
+
 
 
 
@@ -360,25 +371,6 @@ footer .resaux img {
        display: flex;
        flex-wrap: wrap-reverse;
     }
-    .resaux{
-        text-align: center;
-        margin-right: 60px;
-    }
-    footer .resaux img{
-        width: 6%;
-    }
-    footer .division3 .div1 a{
-        font-size: 10px;
-    }
-    .div2 .txt p {
-        font-size: 10PX;
-        width: 200PX;
-    }
-    .div2 h3 {
-        font-size: 12PX;
-        width: 150PX;
-    }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -412,25 +404,6 @@ footer .resaux img {
 }
 .sec4{
     height: 260px;
-}
-.resaux{
-    text-align: center;
-    margin-right: 60px;
-}
-footer .resaux img{
-    width: 6%;
-}
-.div2{
-    padding-right: 40px;
-}
-.div2 .txt p {
-    font-size: 8PX;
-    width: 200PX;
-
-}
-.div2 h3 {
-    font-size: 10PX;
-    width: 150PX;
 }
 
 .sec2 .info .text {
