@@ -3,7 +3,12 @@ const accordions = document.querySelectorAll('.accordion-item');
 accordions.forEach(item => {
     const header = item.querySelector(".accordion-header");
     header.addEventListener("click", () =>{
-  
+        const styleFaq = header.getAttribute('style')
+        if (styleFaq === "background: rgb(96, 98, 98)") {
+          header.setAttribute('style','')
+        } else {
+          header.setAttribute('style','background: rgb(96, 98, 98)')
+        }
         item.classList.toggle("active");
     })
 })

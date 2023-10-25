@@ -206,14 +206,14 @@ h1 {
 
 .accordion-item .accordion-content {
     width: 50%;
-    margin-top: 1vw;
-    color: rgba(0, 0, 0, 0.53);
+    /* padding-top: 1vw; */
+    color: rgba(255, 252, 252, 0.53);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
     font-size: 2vw;
     background-color: rgb(96, 98, 98);
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     height: 10vw;
 }
 
