@@ -105,21 +105,25 @@ header {
 .sec2 .info .text p{
     padding-top: 2vw;
 }
-.sec2 .info button{
+.sec2 .info .button{
     margin-top: 2.8vw;
     width: 16VW;
     height: 4vw;
     border-radius: 112PX;
     background-color: #786b5786;
     font-size: 1.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.sec2 .info button:hover{
+.sec2 .info .button:hover{
     cursor: pointer;
     background-color: white;
     color: #815B22;
 }
 .sec2 .info a{
     color: white;
+    
 }
 .sec2 .info a:hover{
     color: #815B22;

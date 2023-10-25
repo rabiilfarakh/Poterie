@@ -39,7 +39,8 @@
                     <p>3. Capacité de l'atelier : Limitez le nombre de participants en fonction de la capacité de votre atelier pour assurer une expérience de qualité.</p>
                     <p>4. Politique de respect de l'environnement : Encouragez le respect de l'environnement en précisant comment les matériaux doivent être gérés, recyclés ou éliminés.</p>
                 </div>
-                <button><a href="#sec4">PARTICIPER</a></button>
+                <div class="button"><a href="#sec4">PARTICIPER</a></div>
+                
             </div>     
         </section>
         <section class="sec3">
@@ -74,7 +75,7 @@
                 <a href="">PolicyCookies</a>
             </div>
             <div class="div2">
-                <h3 href="">À PROPOS DE NOUS</h3>
+                <h3>À PROPOS DE NOUS</h3>
                 <div class="txt">
                     <p>Notre Processus Créatif</p>    
                     <p>Notre Engagement envers l'Artisanat</p>
@@ -91,57 +92,7 @@
             <a href=""><img src="./img/ins.png" alt=""></a>
         </div>
     </footer>
-
-        <script>
-            hamburger = document.querySelector(".hamburger");
-            nav = document.querySelector("nav");
-            hamburger.onclick = function() {
-                nav.classList.toggle("active");
-            }
-        </script>
-
-        <!-- regex -->
-
-            <script>
-                function validerFormulaire() {
-                    var full_name = document.getElementById("full_name").value;
-                    var cin = document.getElementById("cin").value;
-                    var email = document.getElementById("email").value;
-                    var num = document.getElementById("num").value;
-                    
-                    var full_nameRegex = /^[a-zA-Z ]+$/;
-                    var cinRegex = /^[a-zA-Z0-9]+$/;
-                    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{3}$/;
-                    var numRegex = /^[0-9]{10}$/;
-                    var i=1;
-        
-                    if (!full_name.match(full_nameRegex)) {
-                        alert("full name n'est pas valide.");
-                        i=0;
-                    }
-
-                    if (!cin.match(cinRegex)) {
-                        alert("CIN n'est pas valide.");
-                        i=0;
-                    }
-
-                    if (!email.match(emailRegex)) {
-                        alert("L'adresse e-mail n'est pas valide.");
-                        i=0;
-                    }
-
-                    if (!num.match(numRegex)) {
-                        alert("Numero de telephone  n'est pas valide.");
-                        i=0;
-                    }
-        
-                    if(i==1){
-                        alert("formulair remplie avec succé");
-                    }
-                }
-            </script>
-
-        <!-- fin -->
-
+    <!-- js -->
+    <script src="javascript.js"></script>
 </body>
 </html>

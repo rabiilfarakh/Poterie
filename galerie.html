@@ -37,7 +37,7 @@
           <div class = container>
             <div class = card>
               <div class = image>
-                <img href = "#" src =./img/jj.png>
+                <img src =./img/jj.png alt="">
               </div>
               <div class = content>
                 <h3>Vase</h3>
@@ -48,7 +48,7 @@
           <div class = container>
             <div class = card>
               <div class = image>
-                <img href = "#" src =./img/tajin1.png>
+                <img src =./img/tajin1.png alt="">
               </div>
               <div class = content>
                 <h3>Tajine</h3>
@@ -59,7 +59,7 @@
           <div class = container>
             <div class = card>
               <div class = image>
-                <img href = "#" src = ./img/tajine2.png>
+                <img src = ./img/tajine2.png alt="">
               </div>
               <div class = content>
                 <h3>Tajine</h3>
@@ -70,7 +70,7 @@
         </section>
         <section class="sec4">
           <div class="im">
-               <img id="img" alt="">
+               <img src="" id="img" alt="">
           </div>
           <div class="direction">
              <div id="flechG">
@@ -90,7 +90,7 @@
                 <a href="">PolicyCookies</a>
             </div>
             <div class="div2">
-                <h3 href="">À PROPOS DE NOUS</h3>
+                <h3>À PROPOS DE NOUS</h3>
                 <div class="txt">
                     <p>Notre Processus Créatif</p>    
                     <p>Notre Engagement envers l'Artisanat</p>
@@ -107,69 +107,7 @@
             <a href=""><img src="./img/ins.png" alt=""></a>
         </div>
     </footer>
-
-    </script>
-        <script>
-            hamburger = document.querySelector(".hamburger");
-            nav = document.querySelector("nav");
-            hamburger.onclick = function() {
-                nav.classList.toggle("active");
-            }
-        </script>
-
-
-
-
-<script>
-    const flechG = document.getElementById('flechG')
-    const flechD = document.getElementById('flechD')
-    const fleG = document.getElementById('fleG')
-    const fleD = document.getElementById('fleD')
-    const img = document.getElementById('img')
-    const img2 = document.getElementById('img2')
-    var imgTable = ["./img/1.png","./img/2.png","./img/3.png","./img/5.png"] 
-    var i=0
-    var j=0
-
-    img.setAttribute('src',imgTable[i])
-    flechD.addEventListener('click',()=>{
-      if(i==3){
-        i=0
-        img.setAttribute('src',imgTable[i])
-      }else{
-        i++
-        img.setAttribute('src',imgTable[i])
-      }
-    })
-    flechG.addEventListener('click',()=>{
-      if(i==0){
-        i=3
-        img.setAttribute('src',imgTable[i])
-      }else{
-        i--
-        img.setAttribute('src',imgTable[i])
-      }
-    })
-
-
-
-
-
-    function changeImg(){
-      if(i==3){
-        i=0
-        img.setAttribute('src',imgTable[i])
-      }else{
-        i++
-        img.setAttribute('src',imgTable[i])
-      }
-      setTimeout(changeImg, 5000);
-    }
-    changeImg()
-
-
-  </script>
-
-
+    <!-- js -->
+    <script src="javascript.js"></script>
 </body>
 </html>
